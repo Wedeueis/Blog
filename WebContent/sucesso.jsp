@@ -4,20 +4,21 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Crie, Construa, Compartilhe</title>
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	<link rel="stylesheet"
- 		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	 <script
+	<title>Sucesso!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	 <script
+ 	<script
 		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-	<jsp:include page="cabecalhoadmin.jsp"/>
-	
-	<br /><jsp:include page="rodape.jsp"/>
-
+	<h3>Mensagem:</h3>
+	${requestScope.msg}
+	<br><br>
+	<div class="container">
+		<br /><br /><a class="btn btn-default" href="index.jsp">home</a>
+	</div>
 </body>
 </html>

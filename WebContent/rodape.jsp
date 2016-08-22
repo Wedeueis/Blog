@@ -7,12 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-		<div class="col-sm-9">
-			
+	<div class="container">
+		<div class="col-sm-4">		
 		</div>
-		<div class="col-sm-3">
-		<h6>Criado por Camila Sass e Wedeueis Braz</h6>
+		<div class="col-sm-4">
+			<h6>Criado por Camila Sass e Wedeueis Braz</h6>
 		</div>
+		<div class="col-sm-4">
+		</div>
+	</div>
 </body>
 </html>

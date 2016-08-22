@@ -27,16 +27,15 @@
 	</div>
 	
 	<div class="container">
-	<form class="form-inline" action="controller" method="post">
 		<div class="col-sm-12">
 			<div class="pull-right">
-					<input type="text" name='email' class="form-control" 
-							id="email" placeholder="Digite seu email">
+				<form class="form-inline" action="controller" method="post"  >
+					<input type="text" name='email' class="form-control" id="email" placeholder="Digite seu email">
 					<input type="submit" class="btn btn-success btn-fill" value="Inscreva-se" />
 					<input type="hidden" name="opcao" value="InsereAssinante" />
+				</form>
 			</div>
 		</div>
-		</form>
 	</div>
 	
 	<div class="container">
@@ -50,7 +49,7 @@
 	<br />
 	
 	<div class="container">
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 			<a type="button" class="btn btn-default btn-block" href="artesanato.jsp">Artesanato</a>
 		</div>
 		<div class="col-sm-2">
@@ -62,8 +61,11 @@
 		<div class="col-sm-2">
 			<a type="button" class="btn btn-default btn-block" href="mochilando.jsp">Mochilando</a>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 			<a type="button" class="btn btn-default btn-block" href="sudoaptget.jsp">Sudo Apt-Get</a>
+		</div>
+		<div class="col-sm-2">
+			<a type="button" class="btn btn-default btn-block" href="gerenciamento.jsp">Gerenciar</a>
 		</div>
 	</div>
 </body>

@@ -5,8 +5,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Sudo Apt-Get</title>
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<link rel="stylesheet"
  		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	 <script
@@ -15,12 +15,17 @@
 		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<jsp:include page="cabecalhoadmin.jsp"/><br>
-		
+
+	<jsp:include page="cabecalhoadmin.jsp"/>
+	<br>
+	
 	<div class="container">
-		<jsp:useBean id="bd" class="dao.PostDAO" />
-		<c:forEach var="post" items="${bd.buscaPeloTema('tecnologia')}">
-			<div class="col-sm-12">
+		<div class="col-sm-12">
+			<br><h2 class="text-center">Lista Completa de Posts</h2><br>
+		</div>
+		<div class="col-sm-12">
+			<jsp:useBean id="bd" class="dao.PostDAO" />
+			<c:forEach var="post" items="${bd.getLista()}">
 				<div class="panel panel-default">
 				  <div class="panel-heading">
 					${post.data} - <b>${post.titulo}</b>
@@ -33,15 +38,16 @@
 						#${post.tag} 
 				  </div>
 				</div>
-			</div>
-		</c:forEach>
-	</div>
-
-	<div class="container">
-		<div class="col-sm-12">
-			<br /><a class="btn btn-default" href="index.jsp">Home</a>
+			</c:forEach>
 		</div>
 	</div>
-	<br /><jsp:include page="rodape.jsp"/>
+	<div class="container">
+		<div class="col-sm-12">
+			<br /><a class="btn btn-default" href="gerenciamento.jsp">Voltar</a>
+		</div>
+	</div>
+	<jsp:include page="rodape.jsp"/>
+
+	<br />
 </body>
 </html>
